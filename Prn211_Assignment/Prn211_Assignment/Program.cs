@@ -1,6 +1,14 @@
-namespace Prn211_Assignment
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using KeyboardShopManagerment_Assignment_PRN211;
+using Prn211_Assignment;
+
+namespace KeyboardShopManagerment_Assignment_PRN211
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -8,10 +16,8 @@ namespace Prn211_Assignment
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new LoginForm());
         }
     }
 }
